@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+  --font-family: 'Encode Sans Expanded', sans-serif;
+  --rating-color: #ffc908;
+}
+
+/* .main-color{
+background-color: #0aad0a;
+} */
+body {
+  font-family: var(--font-family) !important;
+
+  background-image: url(../src/images/light-patten.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 91px;
+
+
+
+}
+
+.rating-color {
+  color: var(--rating-color);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.products .col-md-2:hover {
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+}
+
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+
+/* 
+.products .addBtn {
+  transform: translateY(200%);
+  transition: 0.5s all;
+}
+
+.products .col-md-3:hover .addBtn {
+  transform: translateY(0);
+}
+
+.products .col-md-2:hover .addBtn {
+  transform: translateY(0);
+}
+
+.products .tobrand:hover .addBtn {
+  transform: translateY(0);
+
+} */
+
+.icon-red {
+  color: red !important;
+}
+
+.bg-icon {
+  background-color: #729983;
+  /* background-color: #729983; */
+}
+
+.bg-icon:hover {
+  background-color: #8bb080;
+}
+
+.egp {
+  color: #63c963;
+}
+
+.egpback {
+  /* color: #63c963; */
+  background-color: #63c963;
+}
+
+.brandname {
+  color: #6b7280;
+  ;
+}
+
+.brandname .available {
+  color: rgb(98, 98, 237);
+}
+
+.out-of-stock {
+  background-color: rgba(220, 38, 38, 0.5);
+  color: white;
+  font-size: 0.875rem;
+  width: 95%;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+}
+.suc .succc{
+  transition: 0.5s all;
+}
+.layeer{
+  height: 45px !important;
+}
+.suc:hover .succc{
+  top: 0 !important;
+  /* overflow: visible !important; */
+}
+
+/* .addBtn{
+  background-color:var(--main-color); ;
+} */
